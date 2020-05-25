@@ -10,8 +10,15 @@ export class ContaCorrente{
         } 
     }
 
-    // #saldo = 0 atributo privado
+    get cliente(){
+        return this._cliente;
+    }
+
     _saldo = 0;
+
+    get saldo(){
+        return this._saldo;
+    }
 
     sacar(valor) {
         if(this._saldo >= valor){

@@ -15,11 +15,12 @@ contaCorrenteGabriel.cliente = cliente1;
 contaCorrenteGabriel.depositar(500);
 
 const conta2 = new ContaCorrente();
-conta2.cliente = 0;
+conta2.cliente = cliente1;
 conta2.agencia = 1002;
 
-contaCorrenteGabriel.transferir(200, conta2)
+let valor = 200;
+contaCorrenteGabriel.transferir(valor, conta2)
 
-console.log(contaCorrenteGabriel);
-console.log(conta2);
+console.log(conta2.saldo);
+console.log(conta2.cliente);
 
