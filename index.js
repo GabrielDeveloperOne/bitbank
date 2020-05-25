@@ -15,9 +15,7 @@ contaCorrenteGabriel.cliente = cliente1;
 contaCorrenteGabriel.depositar(500);
 
 const conta2 = new ContaCorrente();
-conta2.cliente = new Cliente();
-conta2.cliente.nome = "Olegario";
-conta2.cliente.cpf = 11111111111;
+conta2.cliente = 0;
 conta2.agencia = 1002;
 
 contaCorrenteGabriel.transferir(200, conta2)
