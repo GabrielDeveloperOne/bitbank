@@ -1,8 +1,10 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
-    agencia;
-    _cliente;
+    constructor(agencia, cliente){
+        this.agencia = agencia;
+        this.cliente = cliente;
+    }
 
     set cliente(novoValor){
         if(novoValor instanceof Cliente){

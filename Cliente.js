@@ -5,6 +5,6 @@ export class Cliente {
     }
 
     get cpf() {
-        this._cpf;
+        return this._cpf;
     }
 }
